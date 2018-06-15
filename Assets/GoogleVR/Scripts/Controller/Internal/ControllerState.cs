@@ -9,12 +9,8 @@
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissioßns and
+// See the License for the specific language governing permissions and
 // limitations under the License.
-
-// The controller is not available for versions of Unity without the
-// // GVR native integration.
-#if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
 
 using UnityEngine;
 using System;
@@ -38,7 +34,6 @@ namespace Gvr.Internal {
     internal Vector2 touchPos = Vector2.zero;
     internal bool touchDown = false;
     internal bool touchUp = false;
-    internal bool recentering = false;
     internal bool recentered = false;
 
     internal bool clickButtonState = false;
@@ -49,8 +44,8 @@ namespace Gvr.Internal {
     internal bool appButtonDown = false;
     internal bool appButtonUp = false;
 
-    // Always false for the emulator.
     internal bool homeButtonDown = false;
+    internal bool homeButtonUp = false;
     internal bool homeButtonState = false;
 
     internal string errorDetails = "";
@@ -69,7 +64,6 @@ namespace Gvr.Internal {
       touchPos = other.touchPos;
       touchDown = other.touchDown;
       touchUp = other.touchUp;
-      recentering = other.recentering;
       recentered = other.recentered;
       clickButtonState = other.clickButtonState;
       clickButtonDown = other.clickButtonDown;
@@ -78,6 +72,7 @@ namespace Gvr.Internal {
       appButtonDown = other.appButtonDown;
       appButtonUp = other.appButtonUp;
       homeButtonDown = other.homeButtonDown;
+      homeButtonUp = other.homeButtonUp;
       homeButtonState = other.homeButtonState;
       errorDetails = other.errorDetails;
       gvrPtr = other.gvrPtr;
@@ -96,10 +91,9 @@ namespace Gvr.Internal {
       appButtonDown = false;
       appButtonUp = false;
       homeButtonDown = false;
-      homeButtonState = false;
+      homeButtonUp = false;
     }
   }
 }
 /// @endcond
 
-#endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)

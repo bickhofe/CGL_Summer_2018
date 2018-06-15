@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TeleportHere : MonoBehaviour {
 
-    public Camera myCamera;
+    public GameObject Player;
 
     public void SetNewCameraPosition()
     {
-        myCamera.transform.position = transform.position;
+        Player.transform.position = transform.position;
     }
 }

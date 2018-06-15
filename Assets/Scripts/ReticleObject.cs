@@ -4,6 +4,7 @@ using UnityEngine.UI; // Required when Using UI elements.
 
 public class ReticleObject : MonoBehaviour
 {
+    public GameObject Player;
     public Image RingFill;
     public bool isActive;
     public float waitTime = 3.0f;
@@ -17,7 +18,8 @@ public class ReticleObject : MonoBehaviour
         else if (isActive && RingFill.fillAmount >= 1)
         {
             //send one message only!
-            Camera.main.SendMessage("ObjectSelected", true);
+            Player.SendMessage("ObjectSelected", true);
+            
             //isActive = false;
             RingFill.fillAmount = 0;
         }

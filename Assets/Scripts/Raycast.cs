@@ -3,8 +3,10 @@ using UnityEngine.UI;
 
 public class Raycast : MonoBehaviour
 {
+    public Transform VRCam;
     public ReticleObject Reticle;
     InteractiveObject currentObject;
+    
 
     //received message from reticle
     public void ObjectSelected()
@@ -16,10 +18,10 @@ public class Raycast : MonoBehaviour
     void FixedUpdate()
     {
         RaycastHit hit;
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        Vector3 fwd = VRCam.TransformDirection(Vector3.forward);
         
 
-        if (Physics.Raycast(transform.position, fwd, out hit, 100.0f))
+        if (Physics.Raycast(VRCam.position, fwd, out hit, 100.0f))
         {
             print("Hit at: " + hit.collider.name); //hit.distance
 
@@ -44,7 +46,7 @@ public class Raycast : MonoBehaviour
         }
         
         //debug only
-        Vector3 forward = transform.TransformDirection(Vector3.forward) * 100;
-        Debug.DrawRay(transform.position, forward, Color.green);
+        Vector3 forward = VRCam.TransformDirection(Vector3.forward) * 100;
+        Debug.DrawRay(VRCam.position, forward, Color.green);
     }
 }
