@@ -85,7 +85,7 @@ public class GvrPointerInputModule : BaseInputModule {
   public override bool ShouldActivateModule() {
     bool isVrModeEnabled = !vrModeOnly;
 #if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
-    isVrModeEnabled |= VRSettings.enabled;
+    isVrModeEnabled |= UnityEngine.XR.XRSettings.enabled;
 #else
     isVrModeEnabled |= GvrViewer.Instance.VRModeEnabled;
 #endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
@@ -467,9 +467,9 @@ public class GvrPointerInputModule : BaseInputModule {
     int viewportHeight = Screen.height;
     #if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR) && UNITY_ANDROID
     // GVR native integration is supported.
-    if (VRSettings.enabled) {
-      viewportWidth = VRSettings.eyeTextureWidth;
-      viewportHeight = VRSettings.eyeTextureHeight;
+    if (UnityEngine.XR.XRSettings.enabled) {
+      viewportWidth = UnityEngine.XR.XRSettings.eyeTextureWidth;
+      viewportHeight = UnityEngine.XR.XRSettings.eyeTextureHeight;
     }
     #endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR) && UNITY_ANDROID
 

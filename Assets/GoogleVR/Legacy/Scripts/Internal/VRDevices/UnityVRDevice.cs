@@ -23,7 +23,7 @@ namespace Gvr.Internal {
     public override void Init() { }
 
     public override void SetVRModeEnabled(bool enabled) {
-      VRSettings.enabled = enabled;
+      UnityEngine.XR.XRSettings.enabled = enabled;
     }
 
     public override void ShowSettingsDialog() { }
@@ -38,12 +38,12 @@ namespace Gvr.Internal {
 
     // Implemented only for bridging to the GVR native integration.
     public override void UpdateState() {
-      this.headPose.Set(InputTracking.GetLocalPosition(VRNode.Head),
-          InputTracking.GetLocalRotation(VRNode.Head));
+      this.headPose.Set(UnityEngine.XR.InputTracking.GetLocalPosition(UnityEngine.XR.XRNode.Head),
+          UnityEngine.XR.InputTracking.GetLocalRotation(UnityEngine.XR.XRNode.Head));
     }
 
     public override void Recenter() {
-      InputTracking.Recenter();
+      UnityEngine.XR.InputTracking.Recenter();
     }
 
     public override void OnPause(bool pause) { }
