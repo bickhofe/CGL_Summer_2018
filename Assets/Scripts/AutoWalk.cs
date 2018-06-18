@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class AutoWalk : MonoBehaviour {
 
+    public Transform VRCam;
     public bool canWalk = false;
     public float speed = 10;
     public Text WalkButtonText;
     public float groundHeight = 2;
+    
 
     public void ToggleWalk()
     {
@@ -30,7 +32,7 @@ public class AutoWalk : MonoBehaviour {
     void Update () {
         if (canWalk)
         {
-            transform.Translate((Vector3.forward * speed) * Time.deltaTime);
+            transform.Translate((VRCam.forward * speed) * Time.deltaTime);
             transform.position = new Vector3(transform.position.x, groundHeight, transform.position.z);
         }
     }

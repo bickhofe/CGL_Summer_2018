@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class AutoFly : MonoBehaviour {
 
+    public Transform VRCam;
     public bool canFly = false;
     public float speed = 10;
     public Text FlyButtonText;
@@ -36,7 +37,7 @@ public class AutoFly : MonoBehaviour {
     void Update () {
         if (canFly)
         {
-            transform.Translate((Vector3.forward * speed) * Time.deltaTime);
+            transform.Translate((VRCam.forward * speed) * Time.deltaTime);
 
             //limit height
             if (transform.position.y < minHeight) transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
