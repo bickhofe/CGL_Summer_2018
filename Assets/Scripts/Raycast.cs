@@ -7,7 +7,6 @@ public class Raycast : MonoBehaviour
     public ReticleObject Reticle;
     InteractiveObject currentObject;
     
-
     //received message from reticle
     public void ObjectSelected()
     {
