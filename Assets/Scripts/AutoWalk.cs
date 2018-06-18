@@ -10,11 +10,6 @@ public class AutoWalk : MonoBehaviour {
     public Text WalkButtonText;
     public float groundHeight = 2;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-
     public void ToggleWalk()
     {
 
