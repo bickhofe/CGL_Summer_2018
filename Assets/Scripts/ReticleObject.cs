@@ -13,7 +13,7 @@ public class ReticleObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(isActive);
+       // print(isActive);
         
         if (isActive && RingFill.fillAmount < 1) RingFill.fillAmount += 1.0f / waitTime * Time.deltaTime;
         else if (!isActive && RingFill.fillAmount > 0) RingFill.fillAmount -= 1.0f / resetTime * Time.deltaTime;
