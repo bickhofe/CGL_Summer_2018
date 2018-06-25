@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Waypoints : MonoBehaviour {
     public Vector3[] Ziele;
+    //public Transform[] ZieleTrans;
     public float speed = 1;
     int pos = 0;
 

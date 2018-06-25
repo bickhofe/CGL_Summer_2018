@@ -19,7 +19,6 @@ public class GoToTarget : MonoBehaviour {
 
         if (canWalk && dist > targetDist)
         {
-            transform.LookAt(Target);
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
             transform.position = new Vector3(transform.position.x, groundHeight, transform.position.z);   
         }

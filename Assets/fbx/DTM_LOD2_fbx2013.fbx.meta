@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 9fd8d8e4972fe294dad8c9750ed36ca2
+timeCreated: 1529951269
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: _LOD2_door_left
+    100002: _LOD2_door_right
+    100004: _LOD2_hull
+    100006: _LOD2_steeringWheel
+    100008: _LOD2_TM_Ext_Cables
+    100010: _LOD2_TM_Ext_Front
+    100012: _LOD2_TM_Ext_Rear
+    100014: _LOD2_TM_Int
+    100016: _LOD2_wheel1
+    100018: _LOD2_wheel2
+    100020: _LOD2_wheel3
+    100022: _LOD2_wheel4
+    100024: DeLorean_Time_Machine_Parts_Exterior
+    100026: door_left
+    100028: door_right
+    100030: //RootNode
+    100032: hull
+    100034: steeringWheel
+    100036: TM_Ext_Cables
+    100038: TM_Ext_Front
+    100040: TM_Ext_Rear
+    100042: TM_Int
+    100044: wheel1
+    100046: wheel2
+    100048: wheel3
+    100050: wheel4
+    400000: _LOD2_door_left
+    400002: _LOD2_door_right
+    400004: _LOD2_hull
+    400006: _LOD2_steeringWheel
+    400008: _LOD2_TM_Ext_Cables
+    400010: _LOD2_TM_Ext_Front
+    400012: _LOD2_TM_Ext_Rear
+    400014: _LOD2_TM_Int
+    400016: _LOD2_wheel1
+    400018: _LOD2_wheel2
+    400020: _LOD2_wheel3
+    400022: _LOD2_wheel4
+    400024: DeLorean_Time_Machine_Parts_Exterior
+    400026: door_left
+    400028: door_right
+    400030: //RootNode
+    400032: hull
+    400034: steeringWheel
+    400036: TM_Ext_Cables
+    400038: TM_Ext_Front
+    400040: TM_Ext_Rear
+    400042: TM_Int
+    400044: wheel1
+    400046: wheel2
+    400048: wheel3
+    400050: wheel4
+    2100000: wheels_metal
+    2100002: wheels
+    2100004: proxy
+    2100006: wheels_metal.1
+    2100008: wheels.1
+    2100010: wheels_metal.2
+    2100012: wheels.2
+    2100014: wheels_metal.3
+    2100016: wheels.3
+    2100018: interior_A
+    2100020: TM_int
+    2100022: hull
+    2100024: window
+    2100026: interior_A.1
+    2100028: 'Material #10'
+    2100030: mirror
+    2100032: hull.1
+    2100034: interior_A.2
+    2100036: 'Material #10.1'
+    2100038: hull_other
+    2100040: plastic
+    2100042: 'Material #3'
+    2100044: 'Material #4'
+    2100046: 'Material #8'
+    2100048: 'Material #6'
+    2100050: 'Material #7'
+    2100052: 'Material #5'
+    2100054: 'Material #9'
+    2100056: hull.2
+    2100058: 'Material #10.2'
+    2100060: interior_B
+    2100062: interior_A.3
+    2100064: TM_ext
+    2100066: TM_ext_metal1
+    2100068: TM_ext_grid
+    2100070: TM_ext_glow_metal
+    2100072: TM_ext.1
+    2100074: TM_ext_metal1.1
+    2100076: TM_ext_glow_metal.1
+    2100078: TM_ext_grid.1
+    2100080: TM_ext_metal3
+    2100082: TM_ext_metal2
+    2100084: TM_ext_plastic_black
+    2100086: TM_ext.2
+    2100088: TM_ext_plastic_black.1
+    2100090: TM_ext_metal1.2
+    2100092: TM_int.1
+    2100094: TM_ext_metal2.1
+    2100096: TM_ext_metal3.1
+    2100098: Flux_Cap
+    2300000: _LOD2_door_left
+    2300002: _LOD2_door_right
+    2300004: _LOD2_hull
+    2300006: _LOD2_steeringWheel
+    2300008: _LOD2_TM_Ext_Cables
+    2300010: _LOD2_TM_Ext_Front
+    2300012: _LOD2_TM_Ext_Rear
+    2300014: _LOD2_TM_Int
+    2300016: _LOD2_wheel1
+    2300018: _LOD2_wheel2
+    2300020: _LOD2_wheel3
+    2300022: _LOD2_wheel4
+    3300000: _LOD2_door_left
+    3300002: _LOD2_door_right
+    3300004: _LOD2_hull
+    3300006: _LOD2_steeringWheel
+    3300008: _LOD2_TM_Ext_Cables
+    3300010: _LOD2_TM_Ext_Front
+    3300012: _LOD2_TM_Ext_Rear
+    3300014: _LOD2_TM_Int
+    3300016: _LOD2_wheel1
+    3300018: _LOD2_wheel2
+    3300020: _LOD2_wheel3
+    3300022: _LOD2_wheel4
+    4300000: _LOD2_wheel1
+    4300002: _LOD2_wheel2
+    4300004: _LOD2_wheel4
+    4300006: _LOD2_wheel3
+    4300008: _LOD2_steeringWheel
+    4300010: _LOD2_door_right
+    4300012: _LOD2_door_left
+    4300014: _LOD2_hull
+    4300016: _LOD2_TM_Ext_Front
+    4300018: _LOD2_TM_Ext_Rear
+    4300020: _LOD2_TM_Ext_Cables
+    4300022: _LOD2_TM_Int
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
