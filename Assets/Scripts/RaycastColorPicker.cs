@@ -11,7 +11,7 @@ public class RaycastColorPicker : MonoBehaviour
 
     void Start()
     {
-        texture = new Texture2D(512, 512);
+        texture = new Texture2D(256, 256);
         material.mainTexture = texture;
     }
 
@@ -22,14 +22,14 @@ public class RaycastColorPicker : MonoBehaviour
         
         if (Physics.Raycast(transform.position, fwd, out hit, 100.0f))
         {
-            cube.transform.position = hit.point;
-            print("Hit at: " + hit.point.x);
+            //cube.transform.position = hit.point;
+            //print("Hit at: " + hit.point.x);
 
             Vector2 pixelUV = hit.textureCoord;
             pixelUV.x *= texture.width;
             pixelUV.y *= texture.height;
 
-            texture.SetPixel((int)pixelUV.x, (int)pixelUV.y, Color.black);
+            texture.SetPixel((int)pixelUV.x, (int)pixelUV.y, color);
             //texture.SetPixel((int)hit.textureCoord.x, (int)hit.textureCoord.y, color);
             texture.Apply();
         }
