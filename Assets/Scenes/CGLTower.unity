@@ -449,7 +449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetScript: {fileID: 364329483}
-  ground: 1
   speed: 2
 --- !u!1 &1082365326
 GameObject:
@@ -710,12 +709,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1742585828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 293950dd845522a4395c0799fc371b4d, type: 3}
+  m_Script: {fileID: 11500000, guid: cf3a5e87d379d1e44b3bfd67c81454c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TargetScript: {fileID: 364329483}
-  ground: 0
   speed: 1
+  Rocket: {fileID: 4550717899048366, guid: 7d9522085d8a8664fbec92aede7ad7e2, type: 2}
 --- !u!4 &1742585830
 Transform:
   m_ObjectHideFlags: 0

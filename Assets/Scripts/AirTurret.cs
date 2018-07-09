@@ -2,11 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turret : MonoBehaviour {
+public class AirTurret : MonoBehaviour {
 
     public CreateTargets TargetScript;
     public float speed = 2;
     bool canFire = true;
+    Transform curTarget;
+    public Transform Rocket;
+
+    private void Start()
+    {
+        InvokeRepeating("TryToFire", 0.0f, 1f);
+    }
+
+    void TryToFire()
+    {
+        if (canFire)
+        {
+            FireRocket(curTarget);
+            print("fire");
+        } else
+        {
+            print("no air target");
+        }
+    }
+
+    void Update()
+    {
+        MoveAirTurret();
+    }
 
     void FixedUpdate()
     {
@@ -15,19 +39,15 @@ public class Turret : MonoBehaviour {
 
         if (Physics.Raycast(transform.position, fwd, out hit, 100.0f))
         {
-            if (canFire)
+            if (hit.transform != curTarget)
             {
-                canFire = false;
-                TargetScript.Targets.Remove(hit.collider.gameObject.transform);
-                Destroy(hit.collider.gameObject);
-                print("kill");
+                curTarget = hit.transform;
+                canFire = true;
             }
-        }
-
-        else
-
+        } else
         {
-            print("no hit");
+            canFire = false;
+            curTarget = null;
         }
 
         //debug only
@@ -35,36 +55,28 @@ public class Turret : MonoBehaviour {
         Debug.DrawRay(transform.position, forward, Color.green);
     }
 
-    void Update()
+    
+    void MoveAirTurret()
     {
-        MoveTurret();;
-    }
-
-    void MoveTurret()
-    {
-        if (GetNextTarget() != null)
+        if (GetNextAirTarget() != null)
         {
+            //aim
             Vector3 targetDir;
-
-            targetDir = GetNextTarget().position - transform.position;
+            targetDir = GetNextAirTarget().position - transform.position;
 
             float step = speed * Time.deltaTime;
             Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
             Debug.DrawRay(transform.position, newDir, Color.red);
             transform.rotation = Quaternion.LookRotation(newDir);
-
-            transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
         }
     }
 
- 
-
-    Transform GetNextTarget()
+    Transform GetNextAirTarget()
     {
         Transform tar = null;
         float dist = 100;
 
-        foreach(Transform obj in TargetScript.Targets)
+        foreach (Transform obj in TargetScript.AirTargets)
         {
             float checkDist = Vector3.Distance(transform.position, obj.position);
             if (checkDist < dist)
@@ -72,12 +84,18 @@ public class Turret : MonoBehaviour {
                 dist = checkDist;
                 if (tar != obj)
                 {
-                    canFire = true;
                     tar = obj;
                 }
             }
         }
 
         return tar;
+    }
+
+    void FireRocket(Transform target)
+    {
+        Transform newRocket = Instantiate(Rocket, transform.position, transform.rotation);
+        //newRocket.Translate(newRocket.forward * 1.5f);
+        newRocket.GetComponent<HomingMissile>().target = target;
     }
 }

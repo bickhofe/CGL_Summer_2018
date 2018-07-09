@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: f13fdc45851bf7f47920ca95f988582a
+timeCreated: 1509360410
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: "Deckfl\xE4che_1"
+    100004: "Deckfl\xE4che_1_2"
+    100006: "Deckfl\xE4che_1_3"
+    100008: "Deckfl\xE4che_1_4"
+    100010: "Deckfl\xE4che_1_5"
+    100012: "Deckfl\xE4che_1_6"
+    100014: "Deckfl\xE4che_2"
+    100016: "Deckfl\xE4che_2_2"
+    100018: "Deckfl\xE4che_2_3"
+    100020: "Deckfl\xE4che_2_4"
+    100022: "Deckfl\xE4che_2_5"
+    100024: "Deckfl\xE4che_2_6"
+    100026: Extrude_NURBS
+    100028: Extrude_NURBS_0
+    100030: Extrude_NURBS_1
+    100032: Extrude_NURBS_1_2
+    100034: Extrude_NURBS_1_3
+    100036: Extrude_NURBS_2
+    100038: "fl\xFCgel_0"
+    100040: "fl\xFCgel_1"
+    100042: "fl\xFCgel_2"
+    100044: "fl\xFCgel_3"
+    100046: Kapsel
+    100048: Kapsel_2
+    100050: Kapsel_3
+    100052: Kapsel_4
+    100054: Kegel
+    100056: Klon
+    100058: Klon_1
+    100060: Klon_2
+    100062: Kugel
+    100064: Null_0
+    100066: Null_1
+    100068: //RootNode
+    100070: "W\xFCrfel"
+    100072: "W\xFCrfel_2"
+    100074: "W\xFCrfel_3"
+    100076: "W\xFCrfel_4"
+    400000: body
+    400002: "Deckfl\xE4che_1"
+    400004: "Deckfl\xE4che_1_2"
+    400006: "Deckfl\xE4che_1_3"
+    400008: "Deckfl\xE4che_1_4"
+    400010: "Deckfl\xE4che_1_5"
+    400012: "Deckfl\xE4che_1_6"
+    400014: "Deckfl\xE4che_2"
+    400016: "Deckfl\xE4che_2_2"
+    400018: "Deckfl\xE4che_2_3"
+    400020: "Deckfl\xE4che_2_4"
+    400022: "Deckfl\xE4che_2_5"
+    400024: "Deckfl\xE4che_2_6"
+    400026: Extrude_NURBS
+    400028: Extrude_NURBS_0
+    400030: Extrude_NURBS_1
+    400032: Extrude_NURBS_1_2
+    400034: Extrude_NURBS_1_3
+    400036: Extrude_NURBS_2
+    400038: "fl\xFCgel_0"
+    400040: "fl\xFCgel_1"
+    400042: "fl\xFCgel_2"
+    400044: "fl\xFCgel_3"
+    400046: Kapsel
+    400048: Kapsel_2
+    400050: Kapsel_3
+    400052: Kapsel_4
+    400054: Kegel
+    400056: Klon
+    400058: Klon_1
+    400060: Klon_2
+    400062: Kugel
+    400064: Null_0
+    400066: Null_1
+    400068: //RootNode
+    400070: "W\xFCrfel"
+    400072: "W\xFCrfel_2"
+    400074: "W\xFCrfel_3"
+    400076: "W\xFCrfel_4"
+    2300000: body
+    2300002: "Deckfl\xE4che_1"
+    2300004: "Deckfl\xE4che_1_2"
+    2300006: "Deckfl\xE4che_1_3"
+    2300008: "Deckfl\xE4che_1_4"
+    2300010: "Deckfl\xE4che_1_5"
+    2300012: "Deckfl\xE4che_1_6"
+    2300014: "Deckfl\xE4che_2"
+    2300016: "Deckfl\xE4che_2_2"
+    2300018: "Deckfl\xE4che_2_3"
+    2300020: "Deckfl\xE4che_2_4"
+    2300022: "Deckfl\xE4che_2_5"
+    2300024: "Deckfl\xE4che_2_6"
+    2300026: Extrude_NURBS
+    2300028: Extrude_NURBS_0
+    2300030: Extrude_NURBS_1
+    2300032: Extrude_NURBS_1_2
+    2300034: Extrude_NURBS_1_3
+    2300036: Extrude_NURBS_2
+    2300038: Kapsel
+    2300040: Kapsel_2
+    2300042: Kapsel_3
+    2300044: Kapsel_4
+    2300046: Kegel
+    2300048: Kugel
+    2300050: "W\xFCrfel"
+    2300052: "W\xFCrfel_2"
+    2300054: "W\xFCrfel_3"
+    2300056: "W\xFCrfel_4"
+    3300000: body
+    3300002: "Deckfl\xE4che_1"
+    3300004: "Deckfl\xE4che_1_2"
+    3300006: "Deckfl\xE4che_1_3"
+    3300008: "Deckfl\xE4che_1_4"
+    3300010: "Deckfl\xE4che_1_5"
+    3300012: "Deckfl\xE4che_1_6"
+    3300014: "Deckfl\xE4che_2"
+    3300016: "Deckfl\xE4che_2_2"
+    3300018: "Deckfl\xE4che_2_3"
+    3300020: "Deckfl\xE4che_2_4"
+    3300022: "Deckfl\xE4che_2_5"
+    3300024: "Deckfl\xE4che_2_6"
+    3300026: Extrude_NURBS
+    3300028: Extrude_NURBS_0
+    3300030: Extrude_NURBS_1
+    3300032: Extrude_NURBS_1_2
+    3300034: Extrude_NURBS_1_3
+    3300036: Extrude_NURBS_2
+    3300038: Kapsel
+    3300040: Kapsel_2
+    3300042: Kapsel_3
+    3300044: Kapsel_4
+    3300046: Kegel
+    3300048: Kugel
+    3300050: "W\xFCrfel"
+    3300052: "W\xFCrfel_2"
+    3300054: "W\xFCrfel_3"
+    3300056: "W\xFCrfel_4"
+    4300000: Kugel
+    4300002: Kegel
+    4300004: Extrude_NURBS_1
+    4300006: "Deckfl\xE4che_1"
+    4300008: "Deckfl\xE4che_2"
+    4300010: Extrude_NURBS
+    4300012: "Deckfl\xE4che_1_2"
+    4300014: "Deckfl\xE4che_2_2"
+    4300016: Extrude_NURBS_1_2
+    4300018: "Deckfl\xE4che_1_3"
+    4300020: "Deckfl\xE4che_2_3"
+    4300022: Extrude_NURBS_2
+    4300024: "Deckfl\xE4che_1_4"
+    4300026: "Deckfl\xE4che_2_4"
+    4300028: Extrude_NURBS_0
+    4300030: "Deckfl\xE4che_1_5"
+    4300032: "Deckfl\xE4che_2_5"
+    4300034: Extrude_NURBS_1_3
+    4300036: "Deckfl\xE4che_1_6"
+    4300038: "Deckfl\xE4che_2_6"
+    4300040: Kapsel
+    4300042: "W\xFCrfel"
+    4300044: Kapsel_2
+    4300046: "W\xFCrfel_2"
+    4300048: Kapsel_3
+    4300050: "W\xFCrfel_3"
+    4300052: Kapsel_4
+    4300054: "W\xFCrfel_4"
+    4300056: body
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rocket blue
+    second: {fileID: 2100000, guid: e524df35d558cd045918bacb90c02f5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rocket_white
+    second: {fileID: 2100000, guid: 603ca045e4883e540ace0dfd73eaa180, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: typo_black
+    second: {fileID: 2100000, guid: 70c4911038b26394da5a58faaf5ee550, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
