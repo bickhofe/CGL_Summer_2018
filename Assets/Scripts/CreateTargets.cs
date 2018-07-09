@@ -5,7 +5,9 @@ using UnityEngine;
 public class CreateTargets : MonoBehaviour {
 
     public Transform targetPrefab;
+
     public List<Transform> Targets = new List<Transform>();
+
     public List<Transform> AirTargets = new List<Transform>();
 
     // Use this for initialization

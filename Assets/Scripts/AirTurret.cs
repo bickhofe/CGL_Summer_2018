@@ -12,7 +12,7 @@ public class AirTurret : MonoBehaviour {
 
     private void Start()
     {
-        InvokeRepeating("TryToFire", 0.0f, 1f);
+        InvokeRepeating("TryToFire", 0, 1f);
     }
 
     void TryToFire()
