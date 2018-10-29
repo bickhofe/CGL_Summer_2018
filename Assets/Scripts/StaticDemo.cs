@@ -11,11 +11,11 @@ public class StaticDemo : MonoBehaviour
         //MyCube cube2 = new MyCube();
         //MyCube cube3 = new MyCube();
 
-        print(MyCube.cubeCount);
+        //print(MyCube.cubeCount);
 
-        print(Calulator.Sum(10, 10));
-        print(Calulator.Sub(10, 10));
-        print(Calulator.Multi(10, 10));
-        print(Calulator.Div(10, 10));
+        //print(Calulator.Sum(10, 10));
+        //print(Calulator.Sub(10, 10));
+        //print(Calulator.Multi(10, 10));
+        //print(Calulator.Div(10, 10));
     }
 }

@@ -6,8 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CGLStatics.unity
-    guid: ed845418586d0564cbb0af49b5dd7dff
-  - enabled: 1
-    path: Assets/Scenes/CGLStaticsOtherScene.unity
-    guid: 5f5e8e912795d954bb0589f2a3612099
+    path: Assets/Scenes/CGLMultiplayer.unity
+    guid: 20e65b69459cdd446acab0c4d02c5552
