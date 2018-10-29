@@ -6,24 +6,24 @@ public class EnumDemo : MonoBehaviour
 {
     public enum Animal { Elephant, Ape, Tiger, Lion, Bear };
 
-    //[Header("Animals")]
+    [Header("Eigenschaft")]
     [SerializeField]
     public Animal animal;
 
-    //[Space]
+    [Space]
 
-    //[Header ("Stuff")]
-    //[Range(0, 1000)]
-    //public float distance = 0;
+    [Header ("Stuff")]
+    [Range(-1, 1)]
+    public float distance = 0;
 
-    //[HideInInspector]
-    //public int score;
+    [HideInInspector]
+    public int score;
 
-    //[SerializeField]
-    //private int damage;
+    [SerializeField]
+    private int damage;
 
     void Start()
     {
-
+        animal = Animal.Lion;
     }
 }

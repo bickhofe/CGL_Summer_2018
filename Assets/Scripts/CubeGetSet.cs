@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CubeGetSet : MonoBehaviour
 {
-    private int _health = 100;
+    private static int _health = 100;
 
-    public int health
+    public static int health
     {
         get
         {
@@ -15,11 +15,11 @@ public class CubeGetSet : MonoBehaviour
 
         set
         {
-            _health = value;
+            //_health = value;
 
-            //if (value <= 0) _health = 0;
-            //else if (value >= 100)_health = 100;
-            //else _health = value;  
+            if (value <= 0) _health = 0;
+            else if (value >= 100) _health = 100;
+            else _health = value;
         }
     }
 

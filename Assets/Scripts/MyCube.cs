@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MyCube : MonoBehaviour
 {
-    public static float health; 
+    //public static float health;
+    public static int health = 0;
+    [SerializeField]
     public static int cubeCount = 0;
 
     void Start()
@@ -13,6 +15,7 @@ public class MyCube : MonoBehaviour
         print("cube");
         //for instances of the cube
         cubeCount++;
+        print(cubeCount);
     }
 
     //cube class
@@ -37,7 +40,7 @@ public class MyCube : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            SceneManager.LoadScene("CGLStatics", LoadSceneMode.Single);
+            SceneManager.LoadScene("01_CGLStatics", LoadSceneMode.Single);
         }
     }
 

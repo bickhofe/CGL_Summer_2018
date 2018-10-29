@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class MainStatic : MonoBehaviour
 {
-    public CubeGetSet CubeScript;
+    //public CubeGetSet CubeScript;
 
     // Use this for initialization
     void Start()
     {
-        CubeScript.health += 200;
-        print("-> " + CubeScript.health);
+        CubeGetSet.health += 200;
+
+        CubeGetSet.health -= 50;
+        print("-> " + CubeGetSet.health);
 
         //CubeGetSet.health += 200;
         //print("-> "+CubeGetSet.health);
