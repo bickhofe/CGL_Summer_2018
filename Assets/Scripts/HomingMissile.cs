@@ -12,7 +12,7 @@ public class HomingMissile : MonoBehaviour {
     // Use this for initialization
     void Start () {
         TargetScript = GameObject.Find("Main").GetComponent<CreateTargets>();
-
+ 
         //kill after 10 sek.
         Destroy(gameObject, 10);
 	}

@@ -18,7 +18,7 @@ public class Turret : MonoBehaviour {
             if (canFire)
             {
                 canFire = false;
-                TargetScript.Targets.Remove(hit.collider.gameObject.transform);
+                TargetScript.Targets.Remove(hit.transform);
                 Destroy(hit.collider.gameObject);
                 print("kill");
             }
@@ -37,7 +37,7 @@ public class Turret : MonoBehaviour {
 
     void Update()
     {
-        MoveTurret();;
+        MoveTurret();
     }
 
     void MoveTurret()
@@ -67,6 +67,7 @@ public class Turret : MonoBehaviour {
         foreach(Transform obj in TargetScript.Targets)
         {
             float checkDist = Vector3.Distance(transform.position, obj.position);
+
             if (checkDist < dist)
             {
                 dist = checkDist;
