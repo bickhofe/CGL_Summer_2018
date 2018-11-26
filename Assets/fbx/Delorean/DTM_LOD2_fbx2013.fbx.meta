@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 9fd8d8e4972fe294dad8c9750ed36ca2
-timeCreated: 1529951269
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: _LOD2_door_left
     100002: _LOD2_door_right
@@ -143,6 +141,7 @@ ModelImporter:
     4300018: _LOD2_TM_Ext_Rear
     4300020: _LOD2_TM_Ext_Cables
     4300022: _LOD2_TM_Int
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -162,6 +161,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -193,6 +193,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

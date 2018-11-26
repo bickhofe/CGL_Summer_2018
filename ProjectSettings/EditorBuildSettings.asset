@@ -8,3 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/04_CGLMultiplayer.unity
     guid: 20e65b69459cdd446acab0c4d02c5552
+  m_configObjects: {}
