@@ -23,16 +23,24 @@ public class NewMesh : MonoBehaviour
         {
             new Vector3(0, 0, 0),
             new Vector3(0, 0, 1),
-            new Vector3(1, 0, 0)
-            //,
-            //new Vector3(1, 0, 1)
+            new Vector3(1, 0, 0),
+            new Vector3(1, 0, 1),
+
+            new Vector3(0, 1, 0),
+            new Vector3(0, 1, 1),
+            new Vector3(1, 1, 0),
+            new Vector3(1, 1, 1)
         };
 
         Triangles = new int[]
         {
-            0,1,2
-            //,
-            //1,3,2
+            //bottom
+            0,2,1,
+            1,2,3,
+
+            //top
+            4,5,6,
+            5,7,6
         };
     }
 
@@ -41,7 +49,6 @@ public class NewMesh : MonoBehaviour
         mesh.Clear();
         mesh.vertices = Verticies;
         mesh.triangles = Triangles;
-
-        //mesh.RecalculateNormals();
+        mesh.RecalculateNormals();
     }
 }

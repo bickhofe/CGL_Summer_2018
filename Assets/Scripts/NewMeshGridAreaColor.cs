@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewMeshGridArea : MonoBehaviour
+public class NewMeshGridAreaColor : MonoBehaviour
 {
     Mesh mesh;
     Vector3[] Verticies;
     int[] Triangles;
+    Vector2[] myUVs;
 
     public int xSize = 20;
     public int zSize = 20;
+
+    public Renderer MapRenderer;
+    public Color[] ColorMap;
 
     void Start()
     {
@@ -17,28 +21,35 @@ public class NewMeshGridArea : MonoBehaviour
         GetComponent<MeshFilter>().mesh = mesh;
         CreateMesh();
         UpdateMesh();
+        PaintMesh();
     }
-
 
     void CreateMesh()
     {
         //set size
         Verticies = new Vector3[(xSize + 1) * (zSize + 1)];
-        print(Verticies.Length);
+
+        //set uv coordinates
+        myUVs = new Vector2[Verticies.Length];
 
         for (int count = 0, z = 0; z <= zSize; z++)
         {
             for (int x = 0; x <= xSize; x++)
             {
                 //fill in data
-                //add noise float y = Mathf.PerlinNoise(x,z)*2f; // noise plus scale factor
-                Verticies[count] = new Vector3(x, Random.Range(0.0f,2.0f), z);
+                //float y = Mathf.PerlinNoise(x*.3f,z*.3f)*4; // noise scale factor
+                Verticies[count] = new Vector3(x, 0, z);
                 count++;
             }
         }
 
+        //uvs
+        for (var i = 0; i < Verticies.Length; i++)
+        {
+            myUVs[i] = new Vector2(Verticies[i].x/xSize+.15f, Verticies[i].z/zSize+.15f);
+        }
 
-
+      
         //set dynamic size
         Triangles = new int[xSize * zSize * 6];
         int vertCount = 0;
@@ -60,7 +71,6 @@ public class NewMeshGridArea : MonoBehaviour
             }
             vertCount++;
         }
-
     }
 
     void UpdateMesh()
@@ -68,8 +78,30 @@ public class NewMeshGridArea : MonoBehaviour
         mesh.Clear();
         mesh.vertices = Verticies;
         mesh.triangles = Triangles;
-
+        mesh.uv = myUVs;
+        mesh.RecalculateBounds();
+        mesh.RecalculateTangents();
         mesh.RecalculateNormals();
+    }
+
+    void PaintMesh()
+    {
+        Texture2D texture = new Texture2D(xSize, zSize); //ammount in pixels
+        texture.filterMode = FilterMode.Point;
+
+        int count = 0;
+
+        for (int x = 0; x < xSize; x++)
+        {
+            for (int y = 0; y < zSize; y++)
+            {
+                texture.SetPixel(x, y, Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
+                count++;
+            }
+        }
+
+        texture.Apply();
+        MapRenderer.material.mainTexture = texture;
     }
 
     private void OnDrawGizmos()

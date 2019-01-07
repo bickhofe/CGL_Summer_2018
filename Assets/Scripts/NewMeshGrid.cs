@@ -25,7 +25,8 @@ public class NewMeshGrid : MonoBehaviour
         //set size
         Verticies = new Vector3[(xSize + 1) * (zSize + 1)];
         print(Verticies.Length);
-
+        
+        
         for (int count = 0, z = 0; z <= zSize; z++)
         {
             for (int x = 0; x <= xSize; x++)
@@ -38,16 +39,16 @@ public class NewMeshGrid : MonoBehaviour
         }
 
         //set size
-        Triangles = new int[3];
-        //Triangles = new int[6];
+        //Triangles = new int[3];
+        Triangles = new int[6];
 
         // step 1 
         Triangles[0] = 0;
         Triangles[1] = xSize + 1;
         Triangles[2] = 1;
-        //Triangles[3] = 1;
-        //Triangles[4] = xSize + 1;
-        //Triangles[5] = xSize + 2;
+        Triangles[3] = 1;
+        Triangles[4] = xSize + 1;
+        Triangles[5] = xSize + 2;
     }
 
     void UpdateMesh()

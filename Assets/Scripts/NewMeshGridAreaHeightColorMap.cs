@@ -46,7 +46,7 @@ public class NewMeshGridAreaHeightColorMap : MonoBehaviour
         //uvs
         for (var i = 0; i < Verticies.Length; i++)
         {
-            myUVs[i] = new Vector2(Verticies[i].x/xSize, Verticies[i].z/zSize);
+            myUVs[i] = new Vector2(Verticies[i].x/xSize+.5f/xSize, Verticies[i].z/zSize+.5f/zSize);
         }
 
       
@@ -89,19 +89,16 @@ public class NewMeshGridAreaHeightColorMap : MonoBehaviour
         Texture2D texture = new Texture2D(xSize, zSize); //ammount in pixels
         texture.filterMode = FilterMode.Point;
 
-        int count = 0;
-
-        for (int x = 0; x < xSize; x++)
-        {
-            for (int y = 0; y < zSize; y++)
+         for (int y = 0; y < zSize; y++)
+         {
+            for (int x = 0; x < xSize; x++)
             {
-                if (Verticies[count].y <= 1.0f) texture.SetPixel(20 - x, y, ColorMap[0]);
-                if (Verticies[count].y > 1.0f) texture.SetPixel(20 - x , y, ColorMap[1]);
-                if (Verticies[count].y > 2.5f) texture.SetPixel(20 - x, y, ColorMap[2]);
-                if (Verticies[count].y > 3.2f) texture.SetPixel(20 - x, y, ColorMap[3]);
-                count++;
+                if (Verticies[x+y*(zSize+1)].y <= 1f) texture.SetPixel(x , y, ColorMap[0]);
+                if (Verticies[x+y*(zSize+1)].y > 1f) texture.SetPixel(x , y, ColorMap[1]);
+                if (Verticies[x+y*(zSize+1)].y > 2f) texture.SetPixel(x , y, ColorMap[2]);
+                if (Verticies[x+y*(zSize+1)].y > 3f) texture.SetPixel(x , y, ColorMap[3]);
             }
-        }
+        } 
 
         texture.Apply();
         MapRenderer.material.mainTexture = texture;

@@ -31,7 +31,7 @@ public class NewMeshGridAreaHeight : MonoBehaviour
             for (int x = 0; x <= xSize; x++)
             {
                 //fill in data
-                float y = Mathf.PerlinNoise(x*.3f,z*.3f)*2; // noise scale factor
+                float y = Mathf.PerlinNoise(x*.3f,z*.3f)*4; // noise scale factor
                 Verticies[count] = new Vector3(x, y, z);
                 count++;
             }
