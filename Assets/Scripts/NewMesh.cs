@@ -43,6 +43,5 @@ public class NewMesh : MonoBehaviour
         mesh.triangles = Triangles;
 
         //mesh.RecalculateNormals();
-
     }
 }
