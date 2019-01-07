@@ -18,7 +18,9 @@ public class Weapon : MonoBehaviour {
 		if (Input.GetButtonDown("Fire1")){
 			Shoot();
             //ShootRaycast();
-		}
+		} //else {
+            //line.enabled = false;
+		//}
 	}
 
 	void Shoot(){
